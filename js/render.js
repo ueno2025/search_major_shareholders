@@ -6,7 +6,7 @@ export function renderResult(company) {
     // 会社名・業種を改行して表示
     const header = document.createElement("p");
     header.classList.add("header"); // CSSでスタイルを管理
-    header.innerHTML = `会社名: ${company["企業名"]}<br>業種: ${company["業種"]}`;
+    header.innerHTML = `証券コード: ${company["証券コード"]} <br> 会社名: ${company["企業名"]}<br>業種: ${company["業種"]}`;
     resultDiv.appendChild(header);
 
     // 大株主一覧
